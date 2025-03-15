@@ -14,12 +14,13 @@ public class BoundaryPrendreEtal {
 			System.out.println("Je suis désolé " + nomVendeur + ", mais il faut être un habitant du village pour commercer ici.");
 			return;
 		}
+		System.out.println(" Bonjour Bonemine, je vais regarder\r\n"
+				+ " si je peux vous trouver un étal.");
 		if (!controlPrendreEtal.resteEtals()) {
 			System.out.println("Désolé " + nomVendeur + ", je n'ai plus d'étal qui ne soit pas déjà occupé.");
 			return;
 		}
-		System.out.println(" Bonjour Bonemine, je vais regarder\r\n"
-				+ " si je peux vous trouver un étal.");
+		
 		installerVendeur(nomVendeur);	
 	}
 
